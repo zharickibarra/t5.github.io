@@ -1,0 +1,461 @@
+
+:root {
+    --amarillo10: #f39c12;
+    --amarillo20: #f8b954;
+    --blanco: #fff;
+    --blanco-alfa: rgba(255, 255, 255, 0.5);
+    --gris10: #f5f5f5;
+    --gris20: #3d3d3d;
+    --gris30: #1e1e1e;
+    --gris-alfa: rgba(50, 50, 50, 0.5);
+    --negro: #000;
+    --negro-alfa: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: var(--blanco);
+    background-color: var(--amarillo10);
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid var(--blanco);
+    box-shadow: 0px 0px 10px var(--blanco-alfa);
+}
+
+button:hover {
+    background-color: var(--amarillo20);
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--gris10);
+}
+
+/* Nav Container */
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Slogan (Logo) */
+.slogan {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--gris30);
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Nav Menu */
+.nav-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-size: 1em;
+    color: var(--gris30);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--amarillo10);
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuye uniformemente el logo y el menú */
+    align-items: center; /* Alinea el contenido verticalmente al centro */
+    padding: 20px 40px; /* Espaciado alrededor del header */
+    background-color: var(--gris10); /* Fondo gris claro */
+}
+
+/* Contenedor del Logo */
+.nav-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del contenedor */
+    flex: 1; /* Asigna el mismo espacio a ambos contenedores */
+}
+
+/* Logo (Slogan) */
+.slogan {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--amarillo10); /* Color amarillo para el logo */
+    text-decoration: none;
+}
+
+/* Menú de Navegación */
+.nav-menu {
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del contenedor */
+    flex: 1; /* Asigna el mismo espacio al menú */
+    gap: 40px; /* Espaciado entre los elementos del menú */
+}
+
+/* Estilos de los Links del Menú */
+.nav-menu a {
+    font-size: 1em;
+    color: var(--gris30); /* Color gris oscuro para los enlaces */
+    text-decoration: none;
+    transition: color 0.3s; /* Transición para el efecto hover */
+}
+
+.nav-menu a:hover {
+    color: var(--amarillo10); /* Color amarillo al pasar el cursor */
+}
+
+/* Sección Hero */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url(./img-hero-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: 'Minecraft', sans-serif;
+}
+
+#hero h1 {
+    font-family: sans-serif;
+    color: var(--blanco);
+    padding-bottom: 48px;
+}
+
+/* Sección Quienes Somos */
+#quienes-somos .container {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 220px 12px;
+}
+
+#quienes-somos .container .img-quienes-somos {
+    background-image: url(./quienes-somos.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 400px;
+    height: 480px;
+}
+
+#quienes-somos .container .texto {
+
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quienes-somos .container h2 span {
+    color: var(--amarillo10);
+}
+
+/* Sección Nuestros Programas */
+/* Fondo oscuro para la sección */
+/* Fondo oscuro para la sección */
+#nuestros-programas {
+    background-color: #1e1e1e; /* Color de fondo oscuro */
+    padding: 50px 0;
+    color: #ffffff; /* Color de texto blanco para toda la sección */
+}
+
+#nuestros-programas h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#nuestros-programas .contenedor-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#nuestros-programas .card {
+    background-color: #333333; /* Fondo gris oscuro para las tarjetas */
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Div para la imagen y el título */
+#nuestros-programas .card-image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: var(--blanco);
+}
+
+#nuestros-programas .card-image h3 {
+    margin: 0;
+    font-size: 1.8rem; /* Aumenta el tamaño del título */
+    font-weight: bold;
+    color: #ffffff; /* Texto en blanco */
+}
+
+/* Diferentes fondos de imagen para cada tarjeta */
+#nuestros-programas .card-image.front-end {
+    background-image: url('./front-end-1.jpg');
+}
+
+#nuestros-programas .card-image.back-end {
+    background-image: url('./back-end-2.jpg');
+}
+
+#nuestros-programas .card-image.full-stack {
+    background-image: url('./full-stack-1.jpg');
+}
+
+/* Div para el contenido (texto y botón) */
+#nuestros-programas .card-content {
+    padding: 30px; /* Aumenta el padding para agrandar el div de contenido */
+}
+
+#nuestros-programas .card-content p {
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
+    color: #d0d0d0; /* Texto gris claro */
+}
+
+#nuestros-programas .card-content button {
+    background-color: #f7a100; /* Color del botón similar al de la imagen */
+    color: #ffffff; /* Texto del botón en blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px; /* Aumenta el tamaño del botón */
+    font-size: 1.1rem; /* Aumenta el tamaño de la fuente del botón */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#nuestros-programas .card-content button:hover {
+    background-color: #ffb347; /* Color de hover para el botón */
+}
+
+
+/* Sección Características */
+#caracteristicas {
+    padding: 120px 0;
+    display: flex;
+    background-color: var(--gris10);
+}
+
+#caracteristicas .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#caracteristicas .beneficios ul {
+    list-style: none;
+    padding-left: 0; /* Elimina sangría */
+}
+
+#caracteristicas .beneficios li {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--negro);
+    display: flex;
+    align-items: center;
+}
+
+#caracteristicas .beneficios li img {
+    width: 24px; /* Ajusta el tamaño de la imagen del chulo */
+    height: 24px; /* Ajusta la altura de la imagen del chulo */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea la imagen con el texto */
+}
+
+#caracteristicas .imagen-caracteristicas {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    width: 100%; /* El contenedor ocupa todo el ancho */
+    max-width: 500px; /* Limita el ancho máximo de la imagen */
+    margin: 0 auto; /* Centra el contenedor de la imagen */
+}
+
+#caracteristicas .imagen-caracteristicas img {
+    width: 100%; /* La imagen se ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Añade el radio de borde correcto */
+
+}
+/* Sección Listo para Aprender */
+#listo-para-aprender {
+    padding: 80px 0;
+    background-color: var(--gris30);
+    color: var(--blanco);
+    text-align: center;
+}
+
+#listo-para-aprender .container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.btn-aplicar {
+    font-size: 1.5em;
+    color: var(--blanco);
+    background-color: var(--amarillo10);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-aplicar:hover {
+    background-color: var(--amarillo20);
+}
+
+/* Footer */
+footer {
+    display: flex; /* Aplica flexbox al contenedor del footer */
+    justify-content: space-around; /* Agrega espacio alrededor de los elementos */
+    align-items: center; /* Alinea verticalmente al centro */
+    background-color: var(--gris10);
+    padding: 20px 0;
+    color: var(--gris20);
+
+    flex-direction: row; /* Asegura que los elementos estén en una fila */
+}
+
+footer p, footer .redes-sociales {
+    margin: 0; /* Elimina el margen para una mejor alineación */
+}
+
+footer .redes-sociales {
+    display: flex;
+    gap: 20px;
+}
+footer .redes-sociales a img {
+    width: 24px; /* Tamaño original de las imágenes de redes sociales */
+    height: 24px; /* Tamaño original de las imágenes de redes sociales */
+    transition: transform 0.3s;
+}
+
+footer .redes-sociales a img:hover {
+    transform: scale(1.2);
+}
+/* Estilos generales existentes... */
+
+/* Estilos específicos para el menú hamburguesa */
+.hamburguesa {
+    display: none;
+    cursor: pointer;
+}
+
+.barra {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--gris30);
+    margin: 5px auto;
+}
+
+@media (max-width: 768px) {
+    .hamburguesa {
+        display: block;
+    }
+
+    .hamburguesa.active .barra:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguesa.active .barra:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguesa.active .barra:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        background-color: var(--gris10);
+        width: 100%;
+        gap: 16px;
+        top: 70px;
+        left: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+}
